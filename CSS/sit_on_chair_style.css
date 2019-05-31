@@ -177,3 +177,35 @@ section#slider article a {
     display: block;
     text-decoration: none;
 }
+#frame {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.box {
+    padding: 20px;
+    display: flex;
+    position: relative;
+}
+.box div {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    top: 70%;
+    left: 0px;
+}
+.box div h1 {
+    margin-left: 20px;
+    font-weight: 700;
+
+}
+.box div h1 span {
+    text-transform: uppercase;
+}
+.box::after {
+    content: '';
+    display: block;
+    background: #24BA9F;
+}
